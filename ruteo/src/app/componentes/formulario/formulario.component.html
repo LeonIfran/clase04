@@ -1,0 +1,10 @@
+<form [formGroup]="formularioHeroe">
+  <input type="text" formControlName='id'>
+  <input type="text" formControlName='nombre' [ngClass]="{valid: formularioHeroe.controls.nombre.valid && formularioHeroe.controls.nombre.touched,
+  invalid: !formularioHeroe.controls.nombre.invalid && formularioHeroe.controls.nombre.touched}">
+  <input type="text" formControlName='sexo'>
+  <input type="text" formControlName='poder'>
+  <input type="text" formControlName='terreno'>
+  <button (click)=logear() nombre="btnLogear" [disabled]='formularioHeroe.invalid'>Enviar</button>
+
+</form>

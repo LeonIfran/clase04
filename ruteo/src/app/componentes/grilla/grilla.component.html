@@ -1,0 +1,15 @@
+<table border=2>
+  <thead><tr>
+     <td>id</td>
+     <td>nombre</td>
+     <td>sexo</td>
+     <td>poder</td>
+     <td>terreno</td>
+   </tr></thead>
+ <tbody>
+   <ng-container *ngFor="let item of listado" >
+     <tr app-fila [objeto]="item"></tr>
+
+   </ng-container></tbody>
+
+<table>
